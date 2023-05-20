@@ -1,7 +1,8 @@
-import React from 'react';
 import './ExploreContainer.css';
 
-const ExploreContainer: React.FC = () => {
+interface ContainerProps { }
+
+const ExploreContainer: React.FC<ContainerProps> = () => {
   return (
     <div className="container">
       <strong>Ready to create an app?</strong>
