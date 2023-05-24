@@ -31,9 +31,7 @@ import {
   IonInfiniteScroll,
   IonInfiniteScrollContent,
   useIonAlert,
-  IonText,
-  IonInput,
-  IonButton
+  IonText
 } from '@ionic/react'
 import {
   copyOutline,
@@ -50,11 +48,12 @@ import axiosApi from '../../axiosApi'
 import moment from 'moment'
 import Tabs from '../../components/Tabs'
 import { Clipboard } from '@ionic-native/clipboard'
-
 import Footer from '../../components/Footer'
 import useDownLoad from '../../hooks/download.hook'
 import { useStorage } from '../../hooks/useStorage';
 import { useDeviceInfo } from '../../hooks/useDeviceInfo'
+import { Device } from '@ionic-native/device'
+
 
 const Home: React.FC = () => {
   const { t } = useTranslation()
@@ -159,6 +158,7 @@ const Home: React.FC = () => {
     present(link === '' ? 'Link not availabel' : 'Link Copied!', 3000)
   }
 
+
   
 
   return (
@@ -205,7 +205,7 @@ const Home: React.FC = () => {
         <Tabs />
       </IonHeader>
 
-      <IonContent fullscreen>
+      <IonContent fullscreen className='page_content'>
         <Footer />
 
         <IonPopover
@@ -349,7 +349,7 @@ const Home: React.FC = () => {
                         />
                       </IonCol>
                       <IonCol size='4'>
-                        {DeviceInfo !== null ? (
+                        {Device.platform !== null ? (
                           <IonIcon
                             src={downloadOutline}
                             style={{color : 'white'}}

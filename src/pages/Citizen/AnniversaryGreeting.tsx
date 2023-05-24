@@ -130,7 +130,7 @@ const AnniversaryGreeting: React.FC<AnniversaryGreetingsProps> = () => {
           </IonGrid>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent fullscreen className='page_content'>
         <IonGrid>
           <IonRow>
             <IonCol size='3'><IonLabel>{t('lan.lblLangDate')}</IonLabel></IonCol>

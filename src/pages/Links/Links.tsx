@@ -20,7 +20,7 @@ const Links: React.FC = () => {
   return (
     <IonPage>
     <Header titleName={t('lan.lblQuickLinksMenu')} />
-    <IonContent fullscreen>
+    <IonContent fullscreen className='page_content'>
     <List name={t('lan.lblLangNamoApp')} src={Namo} click={() => openBrowser("https://www.narendramodi.in/downloadapp")} />
         <List name={t('lan.lblLangBJP')} src={BJP} click={() => openBrowser("https://www.bjp.org/")} />
         <List name={t('lan.lblLangAmitShahJi')} src={Amit} click={() => openBrowser("http://amitshah.co.in/")} />

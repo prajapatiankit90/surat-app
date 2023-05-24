@@ -89,7 +89,7 @@ const Login: React.FC = () => {
   useEffect(() => {
     setLoad(true)
     const GetLocalForge = async () => {
-      await localforage.getItem('NAVSARI_APP_LOGIN').then((val: any) => {
+      await localforage.getItem('SURAT_APP_LOGIN').then((val: any) => {
         console.log(val)
         if (val !== null) {
           localStorage.setItem('flag', val[0].LOGIN_AS)
@@ -340,15 +340,15 @@ const Login: React.FC = () => {
         setData({ ...defaultState })
       } else {
         LocalStorge(Res)
-        //  setVol(false)
-        // validateIonicUserLogin()
-        // history.replace('/home1')
-        getOtp()
-        setOtp(true)
-        setStart(true)
-        if (time === 0) {
-          setTime(120)
-        }
+        setVol(false)
+        validateIonicUserLogin()
+        history.replace('/home1')
+        // getOtp()
+        // setOtp(true)
+        // setStart(true)
+        // if (time === 0) {
+        //   setTime(120)
+        // }
       }
     }
   }
@@ -493,14 +493,14 @@ const Login: React.FC = () => {
           <IonTitle>Login</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent fullscreen className='page_content'>
         <Loader loading={load} click={() => setLoad(false)} />
         {/* <IonImg className='login-img' src={Img} /> */}
         <IonGrid>
           <IonRow style={{ textAlign: 'center' }}>
             {/* <IonCol size="12"><IonLabel className='login'>SHREE MANOJ KOTAK</IonLabel></IonCol> */}
             <IonCol size='12'>
-              <IonLabel className='login'>Navsari Loksabha</IonLabel>
+              <IonLabel className='login'>Surat Loksabha</IonLabel>
             </IonCol>
           </IonRow>
           <IonRow style={{ textAlign: 'center' }}>

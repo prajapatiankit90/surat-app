@@ -20,7 +20,7 @@ const Citizen: React.FC = () => {
   return (
     <IonPage>
       <Header titleName={t('lan.lblCitizen')} />
-      <IonContent fullscreen>
+      <IonContent fullscreen className='page_content'>
         {Level === 'ASSEMBLY_ADMIN' || Level === 'WARD_PRAMUKH' || Level === 'SHAKTIKENDRA_INCHARGE' || Level === "BOOTH_PR" ? 
         <>
         <Link className='menu' to="/mpprogram"><List name={t('lan.MenuMPsProgram')} src={find} click="" /></Link> 

@@ -121,7 +121,7 @@ const Gallery: React.FC<GalleryProps> = () => {
           </IonGrid>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent fullscreen className='page_content'>
         <IonGrid>
           <IonRow>
             <IonCol size='3'><IonLabel> {t('lan.lblLangLoad')} </IonLabel></IonCol>

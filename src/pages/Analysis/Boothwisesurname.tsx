@@ -182,7 +182,7 @@ const Boothwisesurname: React.FC = () => {
         </IonToolbar>
       </IonHeader>
 
-      <IonContent fullscreen>
+      <IonContent fullscreen className='page_content'>
         <Loader loading={load} click={() => setLoad(false)} />
         <IonGrid>
           <IonRow>

@@ -294,6 +294,13 @@
         "lblWorkStatus": "काम की स्थिति",
         "lblPriority": "प्राथमिकता",
         "lblAll" : "सभी",
-        "lblEditMpProgram" : "कार्यक्रम बदलें"
+        "lblEditMpProgram" : "कार्यक्रम बदलें",
+        "lblDateTime" : "दिनांक समय",
+        "lblOutwardDocDetails":"आउट-वार्ड दस्तावेज़ विवरण",
+        "lblOutwardDocument" : "बाहरी दस्तावेज़",
+        "lblReplayDocument" : "प्रतिक्रिया दस्तावेज़",
+        "lblReplayNotes" : "प्रतिक्रिया नोट्स",
+        "lblReplayBy" : "द्वारा प्रतिक्रिया",
+        "lblInwardNo": "आवक नं"
     }
 }

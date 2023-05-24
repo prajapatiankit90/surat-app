@@ -89,7 +89,7 @@ const GovermentSchemes: React.FC = () => {
           </IonGrid>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent fullscreen className='page_content'>
       <Loader loading={load} click={() => setLoad(false)} />
         {Array.isArray(data) && data.length > 0 ?
           data.map((item: any, key: any) => {

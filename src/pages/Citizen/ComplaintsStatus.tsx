@@ -202,7 +202,7 @@ const ComplaintsStatus: React.FC<ComplaintsProps> = () => {
           </IonGrid>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen ref={contentRef} scrollEvents={true}>
+      <IonContent fullscreen ref={contentRef} scrollEvents={true} className='page_content'>
         <IonGrid>
           <IonRow>
             <IonCol size='3'><IonLabel>{t('lan.lblLangFromDate')}</IonLabel></IonCol>

@@ -271,7 +271,7 @@ const MpProgram: React.FC = () => {
                     </IonGrid>
                 </IonToolbar>
             </IonHeader>
-            <IonContent fullscreen>
+            <IonContent fullscreen className='page_content'>
                 <IonGrid>
                     <IonRow>
                         <IonCol size='3'><IonLabel>{t('lan.lblLangFromDate')}</IonLabel></IonCol>

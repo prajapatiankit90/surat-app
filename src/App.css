@@ -503,7 +503,7 @@ ion-list {
   top: 94.4%;
   position: fixed;
   z-index: 1;
-  width: 100%;
+  width: 50%;
   margin-left: 0;
   background: #ffffff;
   border-radius: 5px;
@@ -534,5 +534,17 @@ ion-datetime-button {
 }
 button{
   background: white;
-
 }
+.page_content {
+  width: 50%;
+  left: 25%;
+}
+@media only screen and (max-width: 768px) {
+  .page_content{
+    width: 100%;
+    left: 0%;
+  }
+  .footer-card{
+    width: 100%;
+  }
+  }

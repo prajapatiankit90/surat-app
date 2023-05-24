@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Darshana Jardosh</string>
+    <string name="title_activity_main">Darshana Jardosh</string>
+    <string name="package_name">com.darshana.jardosh</string>
+    <string name="custom_url_scheme">com.darshana.jardosh</string>
+</resources>

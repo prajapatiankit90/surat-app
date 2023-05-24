@@ -644,7 +644,7 @@ const EntryThohghVoterId: React.FC<RouteComponentProps<MyParams>> = props => {
           </IonGrid>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent fullscreen className='page_content'>
         {id === undefined ? (
           <IonGrid>
             <IonRow>

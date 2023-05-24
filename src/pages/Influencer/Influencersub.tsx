@@ -421,7 +421,7 @@ const Influencersub: React.FC<RouteComponentProps<MyParams>> = props => {
           </IonGrid>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent fullscreen className='page_content'>
         {filter === true ? (
           <IonGrid>
             {Array.isArray(designation) && designation.length !== 0 ? (

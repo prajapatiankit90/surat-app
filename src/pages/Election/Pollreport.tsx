@@ -105,7 +105,7 @@ const PollReport: React.FC<PollProps> = () => {
           </IonGrid>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent fullscreen className='page_content'>
         <IonGrid>
           <IonRow>
 

@@ -293,7 +293,14 @@
     "lblWorkStatus" : "Work Status",
     "lblPriority" : "Priority",
     "lblAll" : "All",
-    "lblEditMpProgram" : "Update Program"
+    "lblEditMpProgram" : "Update Program",
+    "lblDateTime" : "Date Time",
+    "lblOutwardDocDetails" : "Out-Ward Document Details",
+    "lblOutwardDocument" : "Outward Document",
+    "lblReplayDocument" : "Replay Document",
+    "lblReplayNotes" : "Replay Notes",
+    "lblReplayBy" : "Replay By",
+    "lblInwardNo": "Inward No"
     
     
    }

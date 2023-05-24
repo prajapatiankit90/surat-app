@@ -82,7 +82,7 @@ const Youtube: React.FC = () => {
                 </IonToolbar>
             </IonHeader>
 
-            <IonContent fullscreen>
+            <IonContent fullscreen className='page_content'>
             <Loader loading={load} click={() => setLoad(false)} />
                 {Array.isArray(video) && video.length > 0 ?
                     video.map((item: any, key: any) => {

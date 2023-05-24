@@ -53,7 +53,8 @@ const useDownLoad = () => {
             })
     }
 
-    const downloadFilesFor = (url: any, name: any, titleName: any) => {        
+    const downloadFilesFor = (url: any, name: any, titleName: any) => { 
+        alert(url)       
         setLoad(true)
         let fileExtn = name?.split('.').reverse()[0];
         let fileMIMEType = getMIMEtype(fileExtn);
@@ -69,13 +70,16 @@ const useDownLoad = () => {
             destinationInExternalPublicDir: {
                 dirType: 'Download',
                 subPath: name?.split('/').reverse()[0]
-            }
+            },
+            
+            
         };
+        alert(request)
 
-        Downloader.download(request).
-        
-            then((location: string) => {
+        Downloader.download(request)
+            .then((location: string) => {
                 present("Download Completed...", 3000)
+                alert(location)
                 FileOpener.showOpenWithDialog(location, fileMIMEType)
                     .then(() => { })
                     .catch(e => present(e, 3000))

@@ -145,7 +145,7 @@ const Pagewise: React.FC = () => {
         </IonToolbar>
       </IonHeader>
 
-      <IonContent fullscreen>
+      <IonContent fullscreen className='page_content'>
         <IonGrid>
           <IonRow>
             <IonCol size='3'>

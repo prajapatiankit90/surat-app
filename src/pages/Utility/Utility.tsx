@@ -18,7 +18,7 @@ const Utility: React.FC = () => {
   return (
     <IonPage>
       <Header titleName={t('lan.lblUtility')} />
-      <IonContent fullscreen>
+      <IonContent fullscreen className='page_content'>
         <Link to="/pastelection" className='menu'><List name={t('lan.MenuPastElectionResult')} src={past} click="" /></Link>
         <Link to="/voterlist" className='menu'><List name={t('lan.MenuVoterList')} click="" src={single} /></Link>
         <Link to="/entrythrough" className='menu'><List name={t('lan.MenuSingleVoterList')} click="" src={single} /></Link>

@@ -17,7 +17,7 @@ const Analysis: React.FC = () => {
     return (
         <IonPage>
             <Header titleName={t('lan.lblAnalysis')} />
-            <IonContent fullscreen>
+            <IonContent fullscreen className='page_content'>
                 {Level === 'SHAKTIKENDRA_INCHARGE' ?
                     <>
                         <Link to="/boothwise" className='menu'><List name={t('lan.lblLangBoothPPPCReport')} click="" src={boothwise} /></Link>

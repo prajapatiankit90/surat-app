@@ -26,7 +26,7 @@ const Election: React.FC = () => {
   return (
     <IonPage>
       <Header titleName={t('lan.lblElection')} />
-      <IonContent fullscreen>        
+      <IonContent fullscreen className='page_content'>       
         {Level === 'SHAKTIKENDRA_INCHARGE' ?
           <>
             <Link to="/findvoter" className='menu'><List name={t('lan.MenuFindVoters')} src={find} click="" /></Link>

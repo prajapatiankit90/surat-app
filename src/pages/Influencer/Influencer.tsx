@@ -33,7 +33,7 @@ const Influencer: React.FC = () => {
     <IonPage>
       <Header titleName={t('lan.lblInfluencerMenu')} />
 
-      <IonContent fullscreen className='menu_content'>
+      <IonContent fullscreen className='menu_content page_content'>
         {Array.isArray(menu) && menu.length >= 0 ?
           menu.map((item: any, key: any) => {           
             return (
